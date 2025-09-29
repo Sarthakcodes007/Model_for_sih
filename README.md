@@ -30,6 +30,8 @@ Model_for_sih/
    ```bash
    git clone https://github.com/your-username/Model_for_sih.git
    cd Model_for_sih
+   cd Model/
+   python3 test.py (change test image path)
 
 
 
