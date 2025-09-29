@@ -42,17 +42,11 @@ An advanced deep learning system for detecting and segmenting yellow rust diseas
 ### Quick Setup
 
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/yellow-rust-detection.git
 cd yellow-rust-detection
 
-# Create virtual environment
 python -m venv venv
 
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# Linux/macOS:
 source venv/bin/activate
 
 # Install dependencies
