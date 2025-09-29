@@ -44,16 +44,11 @@ An advanced deep learning system for detecting and segmenting yellow rust diseas
 ```bash
 git clone https://github.com/yourusername/yellow-rust-detection.git
 cd yellow-rust-detection
-
-python -m venv venv
-
+python -m venv venv 
 source venv/bin/activate
-
-# Install dependencies
 pip install -r requirements.txt
 
-# Verify installation
-python -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}')"
+python -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}')" #verify installation
 ```
 
 ## 🎯 Quick Start
@@ -61,13 +56,8 @@ python -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA av
 ### 1. Single Image Analysis
 
 ```bash
-# Basic usage
 python run_inference.py --image path/to/wheat_image.jpg
-
-# With custom threshold
-python run_inference.py --image wheat_leaf.jpg --threshold 0.3
-
-# Save enhanced results
+python run_inference.py --image wheat_leaf.jpg --threshold 0.3 #with custom threshold
 python run_inference.py --image wheat_leaf.jpg --save_results --enhance
 ```
 
@@ -86,7 +76,6 @@ python run_inference.py --batch_path "YELLOW-RUST-19/R" --threshold 0.25
 ```bash
 # Launch Streamlit web app
 streamlit run app.py
-
 # Access at http://localhost:8501
 ```
 
@@ -95,13 +84,11 @@ streamlit run app.py
 ```python
 from inference import YellowRustInference
 
-# Initialize inference pipeline
 inference = YellowRustInference(
     config_path='configs/config.yaml',
     checkpoint_path='models/checkpoints/best.pth'
 )
 
-# Run inference
 results = inference.predict_image('wheat_image.jpg')
 
 print(f"Rust coverage: {results['rust_percentage']:.2f}%")
