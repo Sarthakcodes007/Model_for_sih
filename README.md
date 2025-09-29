@@ -288,7 +288,7 @@ If you use this work in your research, please cite:
 
 - **Issues**: [GitHub Issues](https://github.com/yourusername/yellow-rust-detection/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/yourusername/yellow-rust-detection/discussions)
-- **Email**: your.email@example.com
+- **Email**: vasumahajan343@gmail.com
 
 ## 🔄 Changelog
 
